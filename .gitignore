@@ -3,3 +3,8 @@ dist
 .vscode
 lib
 lib-esm
+discord.xml
+modules.xml
+react-text-transition.iml
+vcs.xml
+
