@@ -34,24 +34,13 @@ const Demo: React.FC = () => {
 			<div>
 				<TextTransition
 					inline
-					className="transition-text"
+					colors={['#efdd43', '#57c518']}
 					springConfig={presets.wobbly}
 				>
                     {WORDS[index % WORDS.length]}
                 </TextTransition>
 				&nbsp;is awesome
 			</div>
-			<p />
-			<p />
-			<TextTransition
-				inline
-				className="transition-text"
-				delay={200}
-				direction={number > oldNumber ? "up" : "down"}
-				springConfig={{ mass: 1, tension: 280, friction: 5 }}
-			>
-                {number}
-            </TextTransition>
 		</div>
 	);
 };
