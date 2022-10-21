@@ -1,11 +1,11 @@
-# React-Text-transition
+# React-Text-transition-color
 ### Animate your text changes
 
 ![text-transition](https://raw.githubusercontent.com/WinterCore/react-text-transition/master/example-gifs/example.gif)
 
 [![Edit r03264p26n](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/r03264p26n?view=preview)
 ## Installation
-```npm install -S react-text-transition```
+```npm install -S react-text-transition-color```
 ## Using the demo
 ```npm run dev```
 ## How to use
@@ -35,7 +35,7 @@ const App = () => {
 
   return (
     <h1>
-      <TextTransition springConfig={presets.wobbly}>
+      <TextTransition springConfig={presets.wobbly} colors={['#efdd43', '#57c518']}>
         {TEXTS[index % TEXTS.length]}
       </TextTransition>
     </h1>
